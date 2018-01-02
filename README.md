@@ -2,6 +2,7 @@
 
 ### Dependencies
 <ol>
+  <li>Python 3.5</li>
   <li>numpy</li>
   <li>opencv</li>
   <li>pyautogui (optional)</li>
@@ -12,3 +13,6 @@
 
 ### Overview
 This is an implementation of a simple self driving car. The <a href="https://github.com/udacity/self-driving-car-sim">Udacity Self Driving Car Simulator</a> is used as a testing environment.
+
+### Run
+<code>python bot.py</code>
