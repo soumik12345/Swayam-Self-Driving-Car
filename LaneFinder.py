@@ -38,7 +38,14 @@ class LaneFinder:
                             x1 = (min_y-b) / m
                             x2 = (max_y-b) / m
                         else: # Avoiding division by zero
-                            x1, x2 = 9223372036854775807, 9223372036854775807
+                            if min_y-b < 0:
+                                x1 = -9223372036854775800
+                            else:
+                                x1 = 9223372036854775800
+                            if max_y-b < 0:
+                                x2 = -9223372036854775800
+                            else:
+                                x2 = 9223372036854775800
                         line_dict[idx] = [m,b,[int(x1), min_y, int(x2), max_y]]
                         new_lines.append([int(x1), min_y, int(x2), max_y])
                 final_lanes = {}
