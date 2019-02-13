@@ -105,14 +105,6 @@ class Simple_Lane_Finder(object):
             x1, x2 = int((y1 - c) / m), int((y2 - c) / m)
             y1, y2 = int(y1), int(y2)
             return ((x1, y1), (x2, y2))
-        
-        def make_line_coords(y1, y2, line):
-            if line is None:
-                return None
-            m, c = line
-            x1, x2 = int((y1 - c) / m), int((y2 - c) / m)
-            y1, y2 = int(y1), int(y2)
-            return ((x1, y1), (x2, y2))
 
         def lane_lines(image, lines):
             left_lane, right_lane = average_slope_intercept(lines)
