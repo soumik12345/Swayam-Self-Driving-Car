@@ -10,12 +10,14 @@ This is an implementation of various algorithms and techniques required to build
            <a href="#"><img src="#" alt="Overview" width="60%" height="60%"></a>
            <br>Project 1: Lane Finding
            <br><a href="./P1_Lane_Finder" name="p1_code">(code)</a>
+           <br>Status: Completed<br>
            <a href="#" name="p1_code">(video)</a>
       </p>
     </th>
     <th><p align="center">
            <a href="#"><img src="#" alt="Overview" width="60%" height="60%"></a>
-           <br>P2: Traffic Signs
+           <br>Project 2: Advanced Lane Finding
+           <br>Status: Ongoing<br>
            <br><a href="./P2_Advanced_Lane_Finder" name="p2_code">(code)</a>
            <a href="#" name="p2_code">(video)</a>
         </p>
