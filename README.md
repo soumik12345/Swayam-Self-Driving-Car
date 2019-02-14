@@ -7,7 +7,7 @@ This is an implementation of various algorithms and techniques required to build
   <tr>
     <th>
       <p align="center">
-           <a href="#"><img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="60%" height="60%"></a>
+           <a href="#"><img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="40%" height="40%"></a>
            <br>Project 1: Lane Finding
            <br>Status: Completed<br>
            <br><a href="./P1_Lane_Finder" name="p1_code">(code)</a>
