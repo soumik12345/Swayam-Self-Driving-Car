@@ -23,15 +23,19 @@ def main():
                 pass
     elif sys.argv[1] == 'V':
         cap = cv2.VideoCapture(sys.argv[2])
+        out = cv2.VideoWriter(sys.argv[3], -1, 20.0, (int(cap.get(3)), int(cap.get(4))))
         while cap.isOpened():
             ret, frame = cap.read()
             try:
                 frame = process(frame)
+                out.write(frame)
             except:
                 break
             try:
                 cv2.imshow(sys.argv[2], frame)
                 if cv2.waitKey(25) & 0xFF == ord('q'):
+                    cap.release()
+                    out.release()
                     cv2.destroyAllWindows()
                     break
             except:
