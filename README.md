@@ -11,7 +11,6 @@ This is an implementation of various algorithms and techniques required to build
            <br>Project 1: Lane Finding
            <br>Status: Completed<br>
            <br><a href="./P1_Lane_Finder" name="p1_code">(code)</a>
-           <a href="#" name="p1_code">(video)</a>
       </p>
     </th>
     <th><p align="center">
@@ -33,3 +32,8 @@ Main Dependencies are -
   <li>opencv</li>
   <li>pyautogui (optional)</li>
 </ol>
+
+### Project 1: Lane Finding
+Detection of Lane Lines on road from both Real World Footage as well as Simulator Footage using basic Image Processing techniques including colorspace shifting, thresholding, edge detection and Line Detection.
+
+<img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="60%" height="60%">
