@@ -7,7 +7,7 @@ def grab_frame(box_coords):
     return np.array(ImageGrab.grab(bbox = box_coords))
 
 def process(frame):
-    simple_lane_finder = Simple_Lane_Finder(frame)
+    simple_lane_finder = Simple_Lane_Finder(frame, sys.argv[1])
     return simple_lane_finder.process()
 
 def main():
@@ -42,3 +42,8 @@ def main():
                 pass
 
 main()
+
+# 0, 455
+# 799, 599
+# 799, 383
+# 

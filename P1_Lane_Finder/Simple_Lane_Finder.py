@@ -3,8 +3,9 @@ import cv2
 
 class Simple_Lane_Finder(object):
     
-    def __init__(self, image):
+    def __init__(self, image, environment):
         self.image = image
+        self.environment = environment
     
     def process(self):
 
@@ -41,18 +42,33 @@ class Simple_Lane_Finder(object):
                 cv2.fillPoly(mask, vertices, (255,)*mask.shape[2])        
             return cv2.bitwise_and(image, mask)
         
-        def select_region(image):
+        def select_region(image, env):
             rows, cols = image.shape[:2]
-            bottom_left = [cols*0.1, rows*0.95]
-            top_left = [cols*0.4, rows*0.6]
-            bottom_right = [cols*0.9, rows*0.95]
-            top_right = [cols*0.6, rows*0.6] 
-            # the vertices are an array of polygons (i.e array of arrays) and the data type must be integer
-            vertices = np.array([[
-                bottom_left, top_left,
-                top_right,
-                bottom_right
-            ]], dtype = np.int32)
+            vertices = []
+            
+            # For Real World Footage
+            if env == 'V':
+                bottom_left = [cols*0.1, rows*0.95]
+                top_left = [cols*0.4, rows*0.6]
+                bottom_right = [cols*0.9, rows*0.95]
+                top_right = [cols*0.6, rows*0.6] 
+                vertices = np.array([[
+                    bottom_left, top_left,
+                    top_right,
+                    bottom_right
+                ]], dtype = np.int32)
+
+            # For Real Time Simulator Footage
+            elif env == 'S':
+                vertices = np.array([[
+                    [1, 390],
+                    [1, 599],
+                    [799, 599],
+                    [799, 390],
+                    [532, 270],
+                    [320, 270]
+                ]], dtype = np.int32)
+
             return select_mask(image, vertices)
         
         def hough_line_transforms(image):
@@ -128,7 +144,7 @@ class Simple_Lane_Finder(object):
         gray = convert_to_gray(hls_white_yellow_image)
         blur = apply_gaussian_blur(gray)
         edge = edge_detection(blur)
-        roi = select_region(edge)
+        roi = select_region(edge, self.environment)
         lines = hough_line_transforms(roi)
         try:
             line_image = draw_lines(self.image, lines)
@@ -139,4 +155,4 @@ class Simple_Lane_Finder(object):
         except:
             result = self.image
 
-        return result
+        return cv2.cvtColor(result, cv2.COLOR_BGR2RGB)
