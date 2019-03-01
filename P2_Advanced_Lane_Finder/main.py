@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from Utilities.Undistort import *
 from Utilities.Perspective_Transform import *
+from Utilities.Binarize import *
 
 undistort = Undistort(
     mpimg.imread('./Lane Images/straight_lines2.jpg'),
@@ -23,4 +24,10 @@ plt.title('Labelled Image')
 plt.show()
 plt.imshow(warped_labelled)
 plt.title('Birds Eye View')
+plt.show()
+
+binarize = Binarize(warped)
+binarized_image = binarize.process()
+plt.imshow(binarized_image, cmap = 'gray')
+plt.title('Binarized Image')
 plt.show()
