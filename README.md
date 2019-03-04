@@ -14,11 +14,11 @@ This is an implementation of various algorithms and techniques required to build
       </p>
     </th>
     <th><p align="center">
-           <a href="#"><img src="#" alt="Overview" width="60%" height="60%"></a>
+           <a href="#"><img src="./P2_Advanced_Lane_Finder/Results/real_world_footage.gif" alt="Overview" width="30%" height="30%"></a>
            <br>Project 2: Advanced Lane Finding
-           <br>Status: Ongoing<br>
+           <br>Status: Almost Done<br>
            <br><a href="./P2_Advanced_Lane_Finder" name="p2_code">(code)</a>
-           <a href="#" name="p2_code">(video)</a>
+           <a href="#" name="p2_code"></a>
         </p>
     </th>
 </table>
@@ -37,3 +37,8 @@ Main Dependencies are -
 Detection of Lane Lines on road from both Real World Footage as well as Simulator Footage using basic Image Processing techniques including colorspace shifting, thresholding, edge detection and Line Detection.
 
 <img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="60%" height="60%">
+
+### Project 2: Advanced Lane Finding
+Detection of Lane Lines on road from both Real World Footage as well as Simulator Footage using advanced Image Processing techniques including Distortion Fixing, Perspective Transformation, Binarization and Polynomial Curve Fitting.
+
+<img src="./P2_Advanced_Lane_Finder/Results/real_world_footage.gif" alt="Overview" width="60%" height="60%">

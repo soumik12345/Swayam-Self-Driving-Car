@@ -18,15 +18,12 @@ def load_model(file):
 def hsl_white_yellow(image):
     # convert to hls
     hsl = cv2.cvtColor(image, cv2.COLOR_RGB2HLS)
-    # white mask
     lower = np.uint8([  0, 200,   0])
     upper = np.uint8([255, 255, 255])
     white = cv2.inRange(hsl, lower, upper)
-    # yellow mask
     lower = np.uint8([ 10,   0, 100])
     upper = np.uint8([ 40, 255, 255])
     yellow = cv2.inRange(hsl, lower, upper)
-    # Combining the mask and the image
     mask = cv2.bitwise_or(white, yellow)
     return mask
 
