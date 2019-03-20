@@ -5,22 +5,41 @@ This is an implementation of various algorithms and techniques required to build
 
 <table style="width:100%">
   <tr>
-    <th>
+    <td>
       <p align="center">
-           <a href="#"><img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="30%" height="30%"></a>
-           <br>Project 1: Lane Finding
-           <br>Status: Completed<br>
-           <br><a href="./P1_Lane_Finder" name="p1_code">(code)</a>
+        <img src="./P1_Lane_Finder/Results/output_video.gif" alt="Overview" width="30%" height="30%">
+        <br>Project 1: Lane Finding
+        <br>Status: Completed<br>
+        <br>
+        <a href="./P1_Lane_Finder" name="p1_code">
+          (code)
+        </a>
       </p>
-    </th>
-    <th><p align="center">
-           <a href="#"><img src="./P2_Advanced_Lane_Finder/Results/real_world_footage.gif" alt="Overview" width="30%" height="30%"></a>
-           <br>Project 2: Advanced Lane Finding
-           <br>Status: Almost Done<br>
-           <br><a href="./P2_Advanced_Lane_Finder" name="p2_code">(code)</a>
-           <a href="#" name="p2_code"></a>
-        </p>
-    </th>
+    </td>
+    <td>
+      <p align="center">
+        <img src="./P2_Advanced_Lane_Finder/Results/real_world_footage.gif" alt="Overview" width="30%" height="30%">
+        <br>Project 2: Advanced Lane Finding
+        <br>Status: Done<br>
+        <br>
+        <a href="./P2_Advanced_Lane_Finder" name="p2_code">   (code)
+        </a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align="center">
+        <img src="./P3_Car_Finder/Images/car_cutout_1.jpg" alt="Overview" width="30%" height="30%">
+        <br>Project 3: Car Detection
+        <br>Status: Ongoing<br>
+        <br>
+        <a href="./P3_Car_Finder" name="p3_code">
+          (code)
+        </a>
+      </p>
+    </td>
+  </tr>
 </table>
 
 ### Dependencies
