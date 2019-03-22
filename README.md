@@ -20,7 +20,7 @@ This is an implementation of various algorithms and techniques required to build
       <p align="center">
         <img src="./P2_Advanced_Lane_Finder/Results/real_world_footage.gif" alt="Overview" width="30%" height="30%">
         <br>Project 2: Advanced Lane Finding
-        <br>Status: Done<br>
+        <br>Status: Completed<br>
         <br>
         <a href="./P2_Advanced_Lane_Finder" name="p2_code">   (code)
         </a>
