@@ -31,10 +31,10 @@ This is an implementation of various algorithms and techniques required to build
     <td>
       <p align="center">
         <img src="./P3_Car_Finder/Images/car_cutout_1.jpg" alt="Overview" width="30%" height="30%">
-        <br>Project 3: Car Detection
+        <br>Project 3: Deep Road Finder
         <br>Status: Ongoing<br>
         <br>
-        <a href="./P3_Car_Finder" name="p3_code">
+        <a href="./Deep_Road_Finder" name="p3_code">
           (code)
         </a>
       </p>
