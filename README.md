@@ -1,6 +1,6 @@
 # Swayam - The Self Driving Car
 
-https://mybinder.org/v2/gh/soumik12345/Swayam-Self-Driving-Car/master
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/soumik12345/Swayam-Self-Driving-Car/master)
 
 ### Overview
 This is an implementation of various algorithms and techniques required to build a simple Self Driving Car. A modified versions of the <a href="https://github.com/udacity/self-driving-car-sim">Udacity Self Driving Car Simulator</a> is used as a testing environment.
